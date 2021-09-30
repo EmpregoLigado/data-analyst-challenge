@@ -11,7 +11,7 @@ A **Empresa X** atua no ramo de Recrutamento e Seleção (R&S). Isso significa q
 
 ### Sobre os dados:
 Você deverá copiar os conjuntos de dados abaixo para realizar sua análise:
-1. **jobs.csv**: Contém as vagas abertas pelos clientes da **Empresa X**, suas respectivas classificações e datas;
+1. **jobs.csb**: Contém as vagas abertas pelos clientes da **Empresa X**, suas respectivas classificações e datas;
 2. **category.csv**: Contém a lista de categorias e seus nomes;
 3. **jobCost.csv**:  Contém todos os custos das vagas por dia;
 4. **customer.csv**: Possui a lista de clientes e suas respectivas classificações. 
@@ -19,7 +19,7 @@ Você deverá copiar os conjuntos de dados abaixo para realizar sua análise:
 Veja a estrutura abaixo:
 
 #### Jobs:
-| Partner ID | Job Title  | Category ID |Created At | Expires At | Open Position Amount
+| Partner ID | Job Title  | Category ID |created At | Expires At | Open Position Amount
 | ---        | ---        | ---         |---        | ---        | :--:                 
 | 1123       | Seller     | 3           |           | 1/21/2018  |  1                   
 
@@ -71,7 +71,7 @@ Baseado nesses dados, responda as perguntas abaixo somente utilizando gráficos 
 | 15 | Atendimento       | 77,38
 
 3. Qual o lucro mensal obtido pela **Empresa X** no ano de 2020?
-
+4. A **Empresa X** fez um plano de crescimento para o próximo ano e pretende aumentar em 14% a quantidade de vagas de Tecnologia e Vendas e 8% para as demais vagas. Ela também pretende obter mais 2 clientes do tipo 10, 4 do tipo 12 e um do tipo 14. Considerando o Lucro Médio para cada um desse tipo de vaga e cliente, qual será o crescimento mensal do próximo ano?
 
 Após sua análise desses dados, gostaríamos de saber sua opinião (dessa vez de forma textual) sobre a questão abaixo:
 - Baseado nas informações disponíveis, qual a sua recomendação para que a **Empresa X** direcione seus investimentos? Quais os tipos de cliente ou categorias de vagas geram mais retorno e deveriam receber mais investimentos? Quais geram menos retorno e deveriam ser menos comercializadas?
