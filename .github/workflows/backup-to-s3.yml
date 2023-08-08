@@ -1,0 +1,26 @@
+name: Mirror repo to S3
+run-name: ${{ github.actor }} backup GitHub Actions to AWS S3 🚀
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configurando credenciais AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_S3_BKP_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_S3_BKP_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Limpando diretório de destino no S3
+        run: aws s3 rm --recursive s3://backup-github-levee/EmpregoLigado/data-analyst-challenge/
+
+      - name: Realizando backup para o S3
+        run: aws s3 cp --recursive . s3://backup-github-levee/EmpregoLigado/data-analyst-challenge/
